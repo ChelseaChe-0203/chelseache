@@ -533,17 +533,113 @@ body.theme-blue .compare-card.blue {
   }
 
   body.final-site .page-main {
-    padding-top: 3rem;
+    padding-top: 2.8rem;
   }
 
   .with-banner .hero-shell {
     padding: 1.2rem;
   }
+
+  body.final-site .hero-shell {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch;
+  }
+
+  body.final-site .hero-left,
+  body.final-site .hero-right {
+    display: contents;
+  }
+
+  body.final-site .profile-figure {
+    order: 1;
+    width: min(72vw, 292px);
+    margin: 0 auto;
+  }
+
+  body.final-site .identity-block {
+    order: 2;
+    width: min(100%, 31rem);
+    margin-top: 1.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  body.final-site .identity-block h1 {
+    font-size: clamp(1.64rem, 6.6vw, 2rem);
+    line-height: 1.1;
+  }
+
+  body.final-site .identity-line {
+    margin-top: 0.42rem;
+    font-size: 1rem;
+    line-height: 1.52;
+  }
+
+  body.final-site .body-copy {
+    order: 3;
+    width: min(100%, 31rem);
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: none;
+    text-align: left;
+  }
+
+  body.final-site .body-copy p {
+    font-size: 1.06rem;
+    line-height: 1.69;
+    margin-bottom: 1.4rem;
+  }
+
+  body.final-site .contact-card {
+    order: 4;
+    width: min(100%, 31rem);
+    margin-top: 1.65rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.7rem;
+    border-top-color: rgba(135, 151, 131, 0.18);
+    text-align: center;
+  }
+
+  body.final-site .contact-label {
+    margin-bottom: 0.12rem;
+  }
+
+  body.final-site .contact-email {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  body.final-site .contact-links {
+    margin-top: 0.78rem;
+    font-size: 0.82rem;
+    line-height: 1.55;
+  }
+
+  body.final-site .page-title,
+  body.final-site .research-group {
+    width: min(100%, 31rem);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body.final-site .project-title {
+    font-size: 1.13rem;
+    line-height: 1.42;
+  }
+
+  body.final-site .project-related-tool a {
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 520px) {
   .container {
-    width: min(100% - 1.4rem, 1080px);
+    width: min(100% - 1.5rem, 1080px);
   }
 
   .identity-line,
@@ -556,6 +652,62 @@ body.theme-blue .compare-card.blue {
   body.final-site .project-meta,
   body.final-site .contact-email {
     font-size: 0.97rem;
+  }
+
+  body.final-site .page-main {
+    padding-top: 2.45rem;
+    padding-bottom: 4rem;
+  }
+
+  body.final-site .profile-figure {
+    width: min(78vw, 258px);
+  }
+
+  body.final-site .identity-block {
+    width: min(100%, 27.5rem);
+    margin-top: 1.2rem;
+    text-align: center;
+  }
+
+  body.final-site .identity-block h1 {
+    font-size: clamp(1.5rem, 7.5vw, 1.8rem);
+  }
+
+  body.final-site .identity-line {
+    margin-top: 0.38rem;
+    font-size: 0.96rem;
+  }
+
+  body.final-site .body-copy {
+    width: min(100%, 27.5rem);
+    margin-top: 1.32rem;
+  }
+
+  body.final-site .body-copy p {
+    font-size: 1.02rem;
+    line-height: 1.67;
+    margin-bottom: 1.28rem;
+  }
+
+  body.final-site .contact-card {
+    width: min(100%, 27.5rem);
+    margin-top: 1.48rem;
+    padding-top: 0.74rem;
+  }
+
+  body.final-site .page-title,
+  body.final-site .research-group {
+    width: min(100%, 27rem);
+  }
+
+  body.final-site .project-title {
+    font-size: 1.02rem;
+    line-height: 1.38;
+  }
+
+  body.final-site .contact-links {
+    margin-top: 0.86rem;
+    font-size: 0.8rem;
   }
 
   .compare-links {
