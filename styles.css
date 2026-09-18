@@ -329,6 +329,10 @@ body.final-site .page-title {
   margin-bottom: 2.85rem;
 }
 
+body.final-site .research-page-title {
+  margin-bottom: 0.8rem;
+}
+
 .research-group + .research-group {
   margin-top: 3.25rem;
 }
@@ -354,6 +358,13 @@ body.final-site .research-heading {
   padding-bottom: 0.45rem;
   font-size: 0.99rem;
   letter-spacing: 0.11em;
+}
+
+.research-author-note {
+  margin: 0 0 2.3rem;
+  color: var(--subtle);
+  font-size: 0.82rem;
+  line-height: 1.55;
 }
 
 .project-entry + .project-entry {
@@ -621,6 +632,7 @@ body.theme-blue .compare-card.blue {
   }
 
   body.final-site .page-title,
+  body.final-site .research-author-note,
   body.final-site .research-group {
     width: min(100%, 31rem);
     margin-left: auto;
@@ -696,6 +708,7 @@ body.theme-blue .compare-card.blue {
   }
 
   body.final-site .page-title,
+  body.final-site .research-author-note,
   body.final-site .research-group {
     width: min(100%, 27rem);
   }

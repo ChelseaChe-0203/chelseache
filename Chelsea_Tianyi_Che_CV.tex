@@ -1,0 +1,145 @@
+\documentclass[10pt]{article}
+\usepackage[top=0.62in,bottom=0.56in,left=0.66in,right=0.66in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+\definecolor{text}{HTML}{222222}
+\definecolor{muted}{HTML}{8C8C8C}
+\definecolor{rulegray}{HTML}{A7A7A7}
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=text,
+  linkcolor=text
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{1}
+\urlstyle{same}
+\color{text}
+\linespread{1.05}\selectfont
+
+\newcommand{\cvwebsite}{\href{https://chelseache-0203.github.io/chelseache/}{chelseache-0203.github.io/chelseache/}}
+\newcommand{\supporttext}[1]{{\normalsize #1}}
+\newcommand{\supportemph}[1]{{\normalsize\emph{#1}}}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{1.18em}%
+  {\Large\scshape #1\par}%
+  \vspace{0.08em}%
+  {\color{rulegray}\rule{\textwidth}{0.35pt}\par}%
+  \vspace{0.18em}%
+}
+
+\newcommand{\cvsubsection}[1]{%
+  \vspace{0.7em}%
+  {\large\scshape #1\par}%
+  \vspace{0.3em}%
+}
+
+\newcommand{\educationentry}[4]{%
+  \textbf{#1}\hfill #2\par
+  \supporttext{#3}\par
+  \supportemph{#4}\par
+  \vspace{0.46em}%
+}
+
+\newcommand{\educationentryshort}[3]{%
+  \textbf{#1}\hfill #2\par
+  \supportemph{#3}\par
+  \vspace{0.46em}%
+}
+
+\newcommand{\researchentry}[3]{%
+  \textbf{#1}\par
+  \vspace{0.1em}%
+  \supportemph{#2}\par
+  \if\relax\detokenize{#3}\relax
+  \else
+    \vspace{0.07em}%
+    \supporttext{#3}\par
+  \fi
+  \vspace{0.72em}%
+}
+
+\newcommand{\conferenceentry}[2]{%
+  \textbf{#1}\par
+  \vspace{0.1em}%
+  \supportemph{#2}\par
+  \vspace{0.25em}%
+}
+\newcommand{\conferencebullet}[1]{\hspace*{0.75em}\textbullet\hspace{0.55em}#1\par\vspace{0.14em}}
+
+\newcommand{\sectiontail}[1]{\vspace{#1}}
+\newcommand{\simpleentry}[1]{#1\par\vspace{0.18em}}
+\newcommand{\datedentry}[2]{#1\hfill #2\par\vspace{0.18em}}
+\newcommand{\coursegroup}[1]{\vspace{0.24em}{\normalsize\bfseries #1\par}\vspace{0.1em}}
+\newcommand{\courseline}[1]{\supporttext{#1}\par\vspace{0.08em}}
+
+\begin{document}
+
+{\small\color{muted}\hfill Last Updated: September 2026\par}
+\vspace{0.84em}
+
+\begin{center}
+{\LARGE\bfseries Chelsea Tianyi Che\par}
+\vspace{0.42em}
+{\normalsize Email: \href{mailto:tianyi.che.phd@anderson.ucla.edu}{tianyi.che.phd@anderson.ucla.edu}\par}
+\vspace{0.16em}
+{\normalsize Website: \cvwebsite\par}
+\end{center}
+
+\cvsection{Education}
+\educationentry{University of California, Los Angeles}{2025--present}{Anderson School of Management}{Ph.D. in Behavioral Decision Making}
+\educationentry{Peking University}{2021--2025}{Guanghua School of Management}{Bachelor of Economics}
+\educationentry{University of California, Berkeley}{2023}{Department of Economics}{Visiting Student}
+\sectiontail{0.26em}
+
+\cvsection{Research Interests}
+Information provision and framing; behavioral interventions; gender inequality in organizations;\\
+AI-mediated communication and social behavior; field and lab experiments
+\sectiontail{0.72em}
+
+\cvsection{Research}
+{\small\emph{Authors are listed alphabetically. For papers that deviate from this convention: *First Author or Equal First Author.}\par}
+\cvsubsection{Working Papers}
+\researchentry{Majority vs. Minority Framing of Peer Information: Evidence from a Field Experiment on Property Fee Payments}{Peng Chang, Chelsea Tianyi Che, Juanjuan Meng, and Rui Zhou}{}
+\researchentry{Can DEI Offices Reduce Gender Pay Gap? Evidence from U.S. Public Universities}{Chelsea Tianyi Che and Ricardo Perez-Truglia}{}
+
+\cvsubsection{Manuscripts in Preparation and Selected Work in Progress}
+\researchentry{Promoting Cancer Screening: A Field Experiment on Information Framing and Incentives}{Xiqian Cai, Chelsea Tianyi Che, Hengchen Dai, Daixin He, and Silvia Saccardo}{}
+\researchentry{Spillover Effects of AI Interaction on Human Empathy and Prosocial Behavior}{Chelsea Tianyi Che, Tingzhu Fan, and Juanjuan Meng}{}
+\researchentry{Managers' use and disclosure of GenAI in employee performance feedback}{Chelsea Tianyi Che, Hengchen Dai, and Aurelia Di}{}
+
+\newpage
+\cvsection{Conference Presentations}
+\conferenceentry{Majority vs. Minority Framing of Peer Information: Evidence from a Field Experiment on Property Fee Payments}{Peng Chang, Chelsea Tianyi Che, Juanjuan Meng, and Rui Zhou}
+\conferencebullet{Oral presentation at Academy of Management Annual Meeting 2026 (Philadelphia, PA)}
+\conferencebullet{Poster presentation at Society for Judgment and Decision Making conference 2026 (San Diego, CA)}
+
+\cvsection{Professional Affiliations}
+\simpleentry{Academy of Management (MOC and OB Divisions)}
+\simpleentry{Society for Judgment and Decision Making (SJDM)}
+\sectiontail{0.54em}
+
+\cvsection{Selected Honors and Awards}
+\datedentry{Anderson Fellowship, UCLA Anderson School of Management}{2025--2030}
+\sectiontail{0.54em}
+
+\cvsection{Selected Coursework}
+\coursegroup{Behavioral Decision Making \& Organizations}
+\courseline{Foundation in Organizational Behavior (Prof. Sanford DeVoe)}
+\courseline{Behavioral Economics (Prof. Kareem Haggag)}
+\courseline{Judgment and Decision Making (Prof. Craig Fox)}
+\courseline{Social Psychology (sociological perspective; Prof. Jessica Collett)}
+\courseline{Social Psychology (psychological perspective; Prof. Benjamin Karney)}
+\coursegroup{Research Methods}
+\courseline{Applied Analysis for Behavioral Research (Prof. Stephen Spiller)}
+\courseline{Probability, Statistics, and Computational Methods for Econometrics (Prof. Daniel Benjamin)}
+
+\end{document}
